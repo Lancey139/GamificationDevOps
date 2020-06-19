@@ -1,4 +1,4 @@
-# Gamification_DevOps
+# GamificationDevOps
 
 Plateforme développée dans le but de s'interfacer avec une usine CI/CD : chaque animation est connectée à un job, lorsque celui-ci échoue les moteurs sont actionnés.
 L'objectif est de gamifier la surveillance de l'usine de build DevOps pour remettre la qualité au centre de l'attention de l'équipe.
