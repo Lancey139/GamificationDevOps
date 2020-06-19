@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<box>
+	<connections>
+		<connection data-id="1">
+			<number>1</number>
+			<!--URL de l'integration continue-->
+			<information>http://127.0.0.1:8080</information>
+		</connection>
+		<connection data-id="2">
+			<number>2</number>
+			<!--Nom d'utilisateur-->
+			<information></information>
+		</connection>
+		<connection data-id="3">
+			<number>3</number>
+			<!--Mot de passe-->
+			<information></information>
+		</connection>
+	</connections>
+	<looptime>
+		<time data-id="1">
+			<number>1</number>
+			<!--Periode de veille du programme en minutes : le serveur d'integration continu n'est pas contacte durant ce temps-->
+			<def>10</def>
+		</time>
+		<time data-id="2">
+			<number>2</number>
+			<!--Heure a partir de laquelle le serveur d'integration continu peut etre interroge : format HH:MM-->
+			<def>09:00</def>
+		</time>
+		<time data-id="3">
+			<number>3</number>
+			<!--Heure a partir de laquelle le serveur d'integration continu ne peut plus etre interroge : format HH:MM-->
+			<def>18:30</def>
+		</time>
+	</looptime>
+	<plateforms>
+		<plateform data-id="1">
+			<number>1</number>
+			<jobs>JOB1</jobs>
+			<!--Plateforme correspondant au mat : 1 etat faux correspondant au mat baisse / 0 etat faux correspondant au mat leve-->
+			<stateatfalse>0</stateatfalse>
+		</plateform>
+		<plateform data-id="2">
+			<number>2</number>
+			<jobs>JOB2</jobs>
+			<!--PLateforme effectuant une rotation de 180 degre montrant une figurine au choix-->
+			<!--Ce parametre n'est pas important pour cette plateforme -->
+			<stateatfalse>0</stateatfalse>
+		</plateform>
+		<plateform data-id="3">
+			<number>3</number>
+			<jobs>JOB3</jobs>
+			<!--Plateforme qui ejecte la figurine : 0 etat faux correspondant a la figurine ejectee / 1 etat faux correspondant a la figurine sur le socle-->
+			<stateatfalse>0</stateatfalse>
+		</plateform>
+		<plateform data-id="4">
+			<number>4</number>
+			<jobs>JOB4</jobs>
+			<!-- PLateforme qui monte et qui descend : 1 etat faux correspondant a la position haute / 0 etat faux correspondant a la position basse-->
+			<stateatfalse>1</stateatfalse>
+		</plateform>
+		<plateform data-id="5">
+			<number>5</number>
+			<jobs>JOB5</jobs>
+			<!--PLateforme constituee d'une porte pouvant s'ouvrir ou se fermer : 1 etat faux correspondant a la porte fermee / 0 etat faux correspondant a la porte ouverte-->
+			<stateatfalse>1</stateatfalse>
+		</plateform>
+		<plateform data-id="6">
+			<number>6</number>
+			<jobs>JOB6</jobs>
+			<!--Plateforme constituee de deux socles qui se separent ou qui se rapprochent : 0 etat faux correspondant aux socles eloignes / 1 etat faux correspondant aux socles rapproches-->
+			<stateatfalse>0</stateatfalse>
+		</plateform>
+	</plateforms>
+</box>
